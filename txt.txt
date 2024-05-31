@@ -1,0 +1,14 @@
+Screenshot_20240530-222252.png
+/* 清除默認的選中樣式 */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent; /* 將背景顏色設置為透明 */
+  outline: none; /* 清除點擊時的藍色輪廓 */
+}
+
+/* 給選單添加自定義樣式 */
+.custom-select {
+  /* 添加你的自定義樣式 */
+}
