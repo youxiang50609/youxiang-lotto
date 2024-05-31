@@ -67,6 +67,16 @@
             window.location.href = 'https:page9.netlify.app'; // 替换为您希望重定向的URL
         }
     }
+         function checkPage() {
+        fetch(window.location.href).then(function(response) {
+            if (response.status === 404) {
+                window.location.href = '/404.html'; // 替换为自定义404页面的路径
+            }
+        }).catch(function(error) {
+            console.error('Error:', error);
+        });
+    }
+
 </script>
 </head>
 <body>
